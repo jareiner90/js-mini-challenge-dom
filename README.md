@@ -26,7 +26,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+Does not look like the DOM is fully loaded therefore does not have access to that div element yet. Will add in an event listener to check if the DOM is finished loading before executing that code
 ```
 
 ## Deliverable 2
@@ -35,7 +35,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+using a veriable to target the #header will use style.color = 'red'
 ```
 
 ## Deliverable 3
@@ -57,7 +57,7 @@ Create a DOM element that looks like this for each player and append it to the `
 
 **YOUR NOTES**
 ```
-
+There is a script tag with a src of 'data.js' this should allow access to that file. PLAYERS seems to be a global veriable. I will assign the .player-container class to a veriable. Then set the inner HTML for my playerContainer veriable to the code that starts at line 50 (of this README file) using string interpolation to input the player information for each player. Using the 'forEach' method on PLAYERS
 ```
 
 ## Deliverable 4
@@ -68,5 +68,6 @@ Hint: You can use `querySelector` with [CSS Attribute Selectors](https://develop
 
 **YOUR NOTES**
 ```
+first I will save the unwanted player to a variable using the querySelector method to find the data-number. Then I will apply the .remove() method on that veriable
 
 ```
